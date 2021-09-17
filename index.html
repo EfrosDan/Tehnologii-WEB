@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limbajul C</title> <!----Titlul principal-->
+</head>
+<body>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111;
+        }
+        </style>
+        </head>
+        <body>
+        <ul>
+          <li><a class="active" href="homepage.html">Acasa</a></li>
+          <li><a href="index.html">Limbajul C</a></li>
+          <li><a href="limbajul C++.html">Limbajul C++</a></li>
+          <li><a href="HTML.html">HTML</a></li>
+        </ul>
+    <h1 style="color:rgb(72, 75, 73); font-size:35px; text-align:center";>Limbajul C</h1>
+    <p style="font-size:20px;">Informații generale</p>
+    <img src="unnamed.jpg" width="250" height="170" >
+    <blockquote>C  (/ˈsiː/)  este un limbaj de programare standardizat. Este implementat pe majoritatea platformelor de calcul existente azi, și este cel mai popular limbaj de <br>
+        programare pentru scrierea de software de sistem. Este apreciat pentru eficiența codului obiect generat de compilatoarele C, și pentru portabilitatea </blockquote>
+        <blockquote>A fost dezvoltat la începutul anilor 1970 de Ken Thompson și Dennis Ritchie, care aveau nevoie de un limbaj simplu și portabil pentru scrierea nucleului <br>
+        sistemului de operare UNIX. </blockquote>
+        <blockquote>Sintaxa limbajului C a stat la baza multor limbaje create ulterior și încă populare azi: C++, Java, JavaScrs în strânsă legătură cu hardware-ul, fiind cel mai apropiat de limbajul de asamblare față de <br> majoritatea celorlalte limbaje de programare.</blockquote>
+<h3>Un exemplu de program C („Hello World!”)</h3>
+<p>O variantă a următorului exemplu de program a apărut în prima ediție a cărții lui Brian Kernighan și Dennis Ritchie și a devenit un exemplu standard de program introductiv în majoritatea cărților de programare, indiferent de limbajul de programare.<br> Programul afișează „Hello, World!“ la ieșirea standard, care este, de obicei, un terminal sau monitor. Poate să fie, totuși, și un fișier sau alt dispozitiv hardware, depinzând de maparea ieșirii standard în momentul execuției programului.</p>
+<pre> <b>#include &lt;stdio.h&gt;</b> 
+
+    int main(void)
+    {
+        printf("Hello, World!\n");
+    
+        return 0;
+    }</pre>
+    <p>Urmează o discuție linie cu linie a programului prezentat mai sus:</p>
+    <pre>#include "stdio.h"</pre>
+    <p>Prima linie a programului reprezintă o directivă preprocesor, #include. Aceasta face ca preprocesorul să substituiască linia respectivă cu conținutul unui fișier sau al entității la care se face referire. În acest caz, antetul standard stdio.h — care conține definițiile funcțiilor de manipulare a intrării și ieșirii standard — va înlocui acea linie.</p>
+    <pre>int main(void)</pre>
+    <p>Următoarea linie definește funcția numită main. Funcția main are un loc bine stabilit în programele C. Când un program C este executat, aceasta este prima funcție executată (punctul de intrare în program). Prezența acesteia este obligatorie pentru ca un program să poată fi executat. Porțiunea de cod int indică faptul că valoare întoarsă — valoare pe care funcția main o va întoarce procesului apelant — este un întreg. (void) indică faptul că funcția main nu primește nici un argument la apelare.</p>
+    <pre>{</pre>
+        <p>Paranteza acoladă deschisă indică începutul codului pentru funcția main.</p>
+        <pre> printf("Hello World\n");</pre>
+        <p>Aceasta linie apelează — caută și execută codul — funcția printf, care a fost definită în fișierul header stdio.h. În cadrul acestui apel, funcției printf îi este pasat (transmis) un singur argument, șirul de caractere "Hello, World!\n". Secvența \n este denumită secvență escape (cu semnificație specială), care se traduce prin caracterul EOL (end-of-line, sfârșitul liniei), pentru a muta cursorul pe linia următoare. Valoarea de întoarcere a funcției printf este un întreg int, dar nu este folosită în acest caz (este "ignorată").</p>
+        <pre><b>  return 0;</b></pre>
+        <p>Această instrucțiune termină execuția codului funcției main și face ca aceasta să întoarcă valoarea 0 procesului apelant, în cazul acesta sistemului de operare.</p>
+        <pre>}</pre>
+        <p>Paranteza acoladă închisă indică terminarea codului funcției main.</p>
+</body>
+</html>
