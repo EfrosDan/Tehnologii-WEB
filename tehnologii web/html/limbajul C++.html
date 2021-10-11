@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limbajul C++</title> 
+</head>
+<body>
+    <style>
+        body{
+    font-family: sans-serif;
+    background-color: rgb(238, 243, 245);
+    background-image: url("../img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
+    }
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            border-bottom: 3px solid transparent;
+        }
+
+        .topnav a:hover {
+            background-color: #111;
+        }
+        .content {
+            max-width: 800px;
+            margin-left: 330px;
+            margin-right: 200px;
+            padding-top: 60px;
+            display: flex;
+            flex-direction : column;
+        }
+        .imagine{
+            max-width: 800px;
+            margin-left: 210px;
+            margin-right: 200px;
+            padding-top: 0px;
+            display: flex;
+            flex-direction : column;
+            align-items: center;
+        }
+        #toc_container {
+            background:transparent;
+            border: 2px solid rgb(19, 17, 17);
+            display: table;
+            font-size: 100%;
+            margin-bottom: 1em;
+            padding: 20px;
+            width: auto;
+            margin-top: 36px;
+        }
+        .toc_title {
+            font-weight: 700;
+            text-align: center;
+        }
+        #toc_container li, #toc_container ul, #toc_container ul li{
+            list-style: outside none none !important;
+        }
+        .enumerare ul:not([class]) li:before {
+            top: 10.5px;
+    display: block;
+    content: "";
+    border-radius: 50%;
+    background-color: rgb(3, 3, 3);
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    align-items: flex-end;
+}   
+b{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    left: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color:rgb(255, 255, 255);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+        </style>
+        </head>
+        <body>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="active" href="homepage.html">Acasa</a>
+                <a href="index.html">Limbajul C</a>
+                <a href="limbajul C++.html">Limbajul C++</a>
+                <a href="HTML.html">HTML</a>
+              </ul>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+              <div class="container">
+                  <div class="img">
+                <img src="../img/photo-1523837084841-974e58314272-1652x500.jpg" alt="Snow" style="width:100%; filter:contrast(46%) brightness(80%);" ></div>
+                <div class="centered">
+                    <h1>Ghidul începătorilor în C++: învață ce este și la ce se folosește limbajul C++</h1>
+                    <time datetime="2019-09-23"><i class="cover__icon"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99295 0C4.02495 0 0.00195312 4.032 0.00195312 9C0.00195312 13.968 4.02495 18 8.99295 18C13.97 18 18.002 13.968 18.002 9C18.002 4.032 13.97 0 8.99295 0ZM9.00195 16.2C5.02395 16.2 1.80195 12.978 1.80195 9C1.80195 5.022 5.02395 1.8 9.00195 1.8C12.98 1.8 16.202 5.022 16.202 9C16.202 12.978 12.98 16.2 9.00195 16.2Z" fill="#BBBBBB"></path><path d="M9.45182 4.49948H8.10182V9.89947L12.8268 12.7345L13.5018 11.6275L9.45182 9.22448V4.49948Z" fill="#BBBBBB"></path></svg></i>2021. septembrie 20.</time>
+                </div>
+              </div>
+    <div id="toc_container">
+        <p class="toc_title" style="font-size: 20px;">Contents
+        <ul class="toc_list">
+        <li>1.<a href="#info">Info</a>
+        <li>2.<a href="#program">Program</a>
+        <li>3.<a href="#codeblocks">Limbajul C++ și Code::Blocks</a>
+        <li>4.<a href="#motive">Motive pentru care să înveți limbajul C++, în 2021</a>
+        <li>5.<a href="#prog">Ce poți tu să programezi cu C++, astăzi</a>
+        </p>
+        </ul>
+        </div>
+    <div class="content">
+    <p id="info" style="font-size:25px; text-align: center;" ><b>Informații generale</b></p>
+    <div class="imagine">
+    <img src="../img/ISO_C++_Logo.svg" width="250" height="170" >
+    </div>
+    <p>C++ (pronunțat ca în engleză /ˈsiː plʌs plʌs/) este un limbaj de programare general, compilat. Este un limbaj multi-paradigmă, cu verificarea statică a tipului variabilelor ce suportă programare procedurală, abstractizare a datelor, programare orientată pe obiecte. În anii 1990, C++ a devenit unul dintre cele mai populare limbaje de programare comerciale, rămânând astfel până azi[1].</p>
+    <p>Bjarne Stroustrup de la Bell Labs a dezvoltat C++ (inițial denumit C cu clase) în anii 1980, ca o serie de îmbunătățiri ale limbajului C. Acestea au început cu adăugarea noțiunii de clase, apoi de funcții virtuale, suprascrierea operatorilor, moștenire multiplă (engleză multiple inheritance), șabloane (engleză template) și excepții. Limbajul de programare C++ a fost standardizat în 1998 ca și ISO 14882:1998, versiunea curentă fiind din 2003, ISO 14882:2003. Următoarea versiune standard, cunoscută informal ca C++0x, este în lucru.</p>
+    <h2>Ce fel de limbaj este C++ și cum scrii cod în C++</h2>
+    <div class="imagine">
+    <img src="../img/6-1024x683.jpg" width="600" height="450">
+    </div>
+    <p>C++ este un limbaj hibrid sau un limbaj compilat, pentru că este o combinație între un limbaj procedural și un limbaj de programare orientat pe obiecte. De asemenea, este un limbaj scalabil, cu ajutorul căruia poți crea aplicații ce consumă multe resurse, precum aplicații pentru desktop sau jocuri complexe la nivel grafic.</p>
+    <p>Pașii pentru crearea unui program în C++ sunt:</p>
+    <p><i>-plecarea de la codul sursă, ca pas 0 - un fișier cu extensia .c
+    <br>-preprocesarea
+    <br>-compilarea: în acest proces se ia tot codul și se transformă în limbaj de asamblare, specific procesorului pe care se execută programul
+    <br>-asamblarea - ia limbajul și îl transformă în cod mașină, sau limbaj binar, în 0 și 1,  care să poată fi citit de procesor
+    <br>-linkeditare - se adaugă codului-mașină funcțiile de care avem nevoie (adăugate dintr-o librărie)
+    <br>-la final, reiese programul executabil, care poate fi rulat pe sistem. Spre exemplu, în Windows, fișierele executabile au extensia .exe; este de menționat că acest executabil nu este transferabil de pe un sistem pe altul. Dar, ce putem lua de pe un sistem și pune pe altul este codul sursă (puteam lua, spre exemplu, de pe un Linux și transfera pe un Windows)
+    </i></p>
+    <h3 id="program">Program care afișează textul "Hello World":</h3>
+    <pre>#include &lt;iostream&gt;
+
+    using namespace std;
+    
+    int main() {
+        cout << "Hello World" << endl;
+        return 0;
+    }</pre>
+    <h2 id="codeblocks">Limbajul C++ și Code::Blocks</h2>
+    <p>Pentru a crea programe în C++ ai nevoie de un mediu de dezvoltare integrat (integrated development environment –<a href="https://en.wikipedia.org/wiki/Integrated_development_environment" title="informatie despre IDE">IDE</a> ) care îți va ușura procesul de programare, va compila codul tău și îl va rula. Ce trebuie să faci mai întâi este să alegi IDE-ul și apoi să-l instalezi. Cel mai utilizat IDE pentru programarea C++ este Code::Blocks.</p>
+    <p>Acesta este gratuit, cross-platform (compatibil cu Windows, Mac și Linux), open-source și permisiv cu numeroase compilatoare.
+    <br>Pentru al descărca accesați -<a href="https://www.codeblocks.org/downloads/" title="downloand CodeBlocks">Descarcare Code::Blocks</a></p>
+    <h2 id="motive">Motive pentru care să înveți limbajul C++, în 2021</h2>
+    <p>Ce poate sa facă un program C++? O sumedenie de lucruri interesante și cool, în ciuda „vârstei” sale.  Task-urile tipice de programare includ inserarea sau extragerea de date într-o și dintr-o bază de date, livrarea unei grafici de mare viteză în cadrul unui video sau al unui joc de calculator sau controlarea diferitelor dispozitive atașate la PC. Poți chiar să dezvolți un soft pentru a compune muzică sau efecte sonore.</p>
+    <div class="imagine">
+      <img src="../img/photo-1564038057903-1d48b852b412-1024x683.jpg " width="600" height="400">
+   </div>
+    <p>C++ este un program bun atât pentru front-end, pentru partea grafică, cât și pentru back-end, în special în zona de servere (MySQL este un exemplu bun de program dezvoltat în C++). Deci, multifuncționalitatea lui este unul din motivele pentru care marile companii angajează programatori care știu C++.</p>
+    <h2 id="prog">Ce poți tu să programezi cu C++, astăzi</h2>
+    <p>Vedem că C++ este popular și de viitor. Dar, ce înseamnă asta pentru tine, potențial programator care vrea să învețe și C++? Spre ce fel de companii și spre ce fel de specializări te poți îndrepta dacă înveți acest limbaj? Ce poți, efectiv, să programezi cu el? </p>
+    <div class="enumerare">
+      <ul>
+      <li>Game Development cu C++</li>
+      </ul>
+    </div>
+    <p>Ai fost mereu fascinat de gaming și visai de la primul FPS pe care l-ai jucat că, într-o zi, o să ajungi să creezi chiar tu jocuri și mai bune? Dacă da, limbajul C++ este pentru tine, pentru că este utilizat în game developing. Iată care sunt punctele lui tari: domină complexitatea jocurilor 3D, suportă opțiunea multiplayer prin rețea și optimizează resursele.</p>
+    <img src="../img/photo-1534423861386-85a16f5d13fd-1024x683.jpg" title="Gaming">
+    <p>De asemenea, este un limbaj foarte rapid, care permite programarea procedurală pentru funcții intensive ale CPU-ului. Tocmai de aceea este foarte des folosit pentru engine-urile jocurilor. Ubisoft și Blizzard sunt doi dintre marii producători de jocuri care folosesc limbajul C++ în game development, unul dintre jocurile faimoase dezvoltate cu acest limbaj fiind Assassin’s Creed.</p>
+    <ul>
+      <li>GUI (graphic user interface) cu C++</li>
+    </ul>
+    <p>Limbajul C++ mai este folosit pentru  dezvoltarea de noi aplicații, bazate pe GUI. Aici vorbim de aplicații foarte utilizate, ca Adobe Photoshop. Multe din aplicațiile de la Adobe Systems  sunt dezvoltate în C++, precum Illustrator sau Adobe Premiere. Deci, programatorii de C++ sunt foarte activi în această zonă, așa că aici poate fi următorul tău trib.</p>
+    <img src="../img/adobe-logo.png" title="Adobe logo">
+    <ul>
+      <li>Bază de date cu C++</li>
+    </ul>
+    <p>Pentru cei care vor să meargă într-o zonă ceva mai corporate, cu lucrul cu baze de date, limbajul C++ este din nou răspunsul.  C++ este folosit pentru dezvoltarea de software de bază de date. Exemplul cel mai bun de produs de acest gen este MySQL, unul din cele mai populare software-uri de management de bază de date, ideal pentru companii pentru că salvează timp și bani. </p>
+    <ul>
+      <li>Sisteme de operare cu C++ </li>
+    </ul>
+    <p>Majoritatea sistemelor de operare de la Microsoft (Microsoft Windows 95, 98, 2000, XP, office, Internet Explorer) sunt dezvoltate cu ajutorul limbajului C++ și, de asemenea, câteva părți din sistemul de operare de la Apple. </p>
+    <ul>
+      <li>Web Browser cu C++</li>
+    </ul>
+    <p>Lista de aplicabilitate pentru limbajul C++ continuă cu dezvoltarea de browsere, precum Google Chrome și Mozilla Firefox. Mozilla are dezvoltată în C++ și aplicația Mozilla Thunderbird. </p>
+    <ul>
+      <li>Viitorul cu C++</li>
+    </ul>
+    <p>Chiar dacă acest lucru este acum o utopie, programarea C++ probabil va juca un rol important în răspândirea WebAssembly (wasm). Ce este, mai exact? Un cod de nivel jos (cod byte) care, pe de o parte, salvează bandă și, pe de altă parte, aproape elimină timpul de supra-interpretare, care a fost cel mai mare dezavantaj la asm.js. Această tehnologie, care este în prezent dezvoltată de experți de la Mozilla, Microsoft, Google și Apple, a fost construită de la zero pentru a funcționa de 20 de ori mai rapid decât bine cunoscutul limbaj de programare Javascript. Cu alte cuvinte: reduce în mod virtual decalajul de performanță între aplicații native și aplicații web. Spre exemplu, când încerci să lucrezi cu un Google Sheet ceva mai stufos, datorită lui WebAssembly, vei putea să-l folosești la aceeași viteză ca și cum ar rula pe sistemul tău. Încă în fază experimentală, această tehnologie va schimba fundamental lumea jocurilor video: jocuri acum disponibile pe DVD vor fi în curând disponibile pentru fani sub forma unei pagini web, fără să fie nevoie de procesul de download.</p>
+  </div>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+</html>

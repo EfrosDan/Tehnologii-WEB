@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title> 
+</head>
+<body>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(238, 243, 245);
+            background-image: url("../img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            border-bottom: 3px solid transparent;
+        }
+
+        .topnav a:hover {
+            background-color: #111;
+        }
+        .content {
+            max-width: 800px;
+            margin-left: 330px;
+            margin-right: 200px;
+            padding-top: 60px;
+            display: flex;
+            flex-direction : column;
+        }
+        #toc_container {
+            background:transparent;
+            border: 2px solid rgb(19, 17, 17);
+            display: table;
+            font-size: 100%;
+            margin-bottom: 1em;
+            padding: 20px;
+            width: auto;
+        }
+        .toc_title {
+            font-weight: 700;
+            text-align: center;
+        }
+        #toc_container li, #toc_container ul, #toc_container ul li{
+            list-style: outside none none !important;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container {
+            background-size: 100 200;
+            position: relative;
+            text-align: center;
+            color:rgb(255, 255, 255);
+        }
+        .bg-image {
+      background-image: url("../img/2109960.jpg");
+      background-color: #ffffff;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover;
+      position:relative;
+      }
+      code {
+    padding: 2px 4px;
+    font-size: 120%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    }
+    .imagine{
+            max-width: 800px;
+            margin-left: 210px;
+            margin-right: 200px;
+            padding-top: 0px;
+            display: flex;
+            flex-direction : column;
+            align-items: center;
+        }
+    .wpcmsdev-columns .column.column-width-one-half {
+    width: 48%;
+    }
+    .wpcmsdev-columns .column {
+    float: left;
+    margin-right: 4%;
+    }
+    .wpcmsdev-columns .column:last-child {
+    margin-right: 0 !important;
+}
+.wpcmsdev-columns .column {
+    float: left;
+}
+.wpcmsdev-columns:before, .wpcmsdev-columns:after {
+    display: table;
+    content: "";
+}
+.head{
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    line-height: 1.42857;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace,monospace;
+}
+pre code {
+    padding: 0;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+}
+    </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="homepage.html">Acasa</a>
+            <a href="index.html">Limbajul C</a>
+            <a href="limbajul C++.html">Limbajul C++</a>
+            <a href="HTML.html">HTML</a>
+          </ul>
+          </div>
+          <div class="container">
+            <div class="bg-image">
+          <div class="centered">
+              <h1>Ghidul începătorilor în HTML: învață ce este și la ce se folosește HTML</h1>
+              <time datetime="2021-09-20"><i class="cover__icon"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99295 0C4.02495 0 0.00195312 4.032 0.00195312 9C0.00195312 13.968 4.02495 18 8.99295 18C13.97 18 18.002 13.968 18.002 9C18.002 4.032 13.97 0 8.99295 0ZM9.00195 16.2C5.02395 16.2 1.80195 12.978 1.80195 9C1.80195 5.022 5.02395 1.8 9.00195 1.8C12.98 1.8 16.202 5.022 16.202 9C16.202 12.978 12.98 16.2 9.00195 16.2Z" fill="#BBBBBB"></path><path d="M9.45182 4.49948H8.10182V9.89947L12.8268 12.7345L13.5018 11.6275L9.45182 9.22448V4.49948Z" fill="#BBBBBB"></path></svg></i>2021. septembrie 20.</time>
+          </div>
+          </div>
+        </div>
+          <h1 style="color:rgb(72, 75, 73); font-size:35px; text-align:center">HyperText Markup Language </h1>
+    <div id="toc_container">
+        <p class="toc_title" style="font-size: 20px;">Contents
+        <ul class="toc_list">
+        <li>1.<a href="#info">Info</a>
+        <li>2.<a href="#notiuni">Notiuni de baza</a>
+        <li>3.<a href="#componenta">Componenta unui <br>document HTML</a>
+        <li>4.<a href="#istoria">Istoria HTML-ului</a>
+        <li>5.<a href="#et.at">Ce sunt etichetele și atributele?</a>
+        <li>6.<a href="#editori">Editorii HTML</a>
+        <li>7.<a href="#etichete">Etichete suplimentare</a>
+        </p>
+        </ul>
+        </div>
+    <div class="content">
+    <p id="info" style="font-size:25px;text-align:center;"><b>Informații generale</b></p>
+    <div class="imagine">
+    <img src="../img/512px-HTML5_logo_and_wordmark.svg.png" width="200" height="140" ></div>
+    <p><b>HyperText Markup Language</b> (<b>HTML</b>) este un limbaj de marcare utilizat pentru crearea paginilor web ce pot fi afișate într-un browser (sau navigator). Scopul HTML este mai degrabă prezentarea informațiilor – paragrafe, fonturi, tabele ș.a.m.d. – decât descrierea semanticii documentului. În cadrul dezvoltării web de tip front-end, HTML este utilizat împreună cu <a href="https://ro.wikipedia.org/wiki/Cascading_Style_Sheets" class="mw-redirect" title="CSS">CSS</a> și <a href="https://ro.wikipedia.org/wiki/JavaScript" title="JavaScript">JavaScript</a>
+    <p>Specificațiile HTML sunt dictate de <a href="https://ro.wikipedia.org/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium</a> (W3C), care încurajează utilizarea CSS în locul a HTML explicit pentru prezentare.</p>
+        <h2 id="notiuni">Noțiuni de bază</h2>
+<p>HTML este prescurtarea de la <i>Hyper Text Mark-up Language</i> si este codul care sta la baza paginilor web.
+</p><p>Paginile HTML sunt formate din etichete sau tag-uri și au extensia „.html” sau „.htm”. În marea lor majoritate aceste etichete sunt pereche, una de deschidere <code>&lt;eticheta&gt;</code> și alta de închidere <code>&lt;/eticheta&gt;</code>, mai există și cazuri în care nu se închid, atunci se folosește <code>&lt;eticheta /&gt;</code>. Navigatorul web interpretează aceste etichete afișând rezultatul pe ecran. HTML-ul este un limbaj care nu face deosebire între litere majuscule și minuscule.
+</p><p>Pagina principala a unui domeniu este fisierul „index.html” respectiv „index.htm”. Această pagină este setată a fi afișată automat la vizitarea unui domeniu.
+</p><p>De exemplu la vizitarea domeniului www.nume.ro este afișată pagina www.nume.ro/index.html.
+</p><p>Unele etichete permit utilizarea de atribute care pot avea anumite valori:
+    <pre>&lt;eticheta atribut="valoare"&gt; ... &lt;/eticheta&gt;
+    </pre>
+    <p id="componenta">Componența unui document HTML este:
+    </p>
+    <ol><li>versiunea HTML a documentului</li>
+    <li>zona <i>head</i> cu etichetele <code>&lt;head&gt; &lt;/head&gt;</code></li>
+    <li>zona <i>body</i> cu etichetele <code>&lt;body&gt; &lt;/body&gt;</code> sau <code>&lt;frameset&gt; &lt;/frameset&gt;</code></li></ol>
+    <p>Versiunea HTML poate fi:
+    </p>
+    <ul><li><b>HTML 4.01 Strict</b>
+    <dl><dd></dd></dl></li></ul>
+    <pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    </pre>
+    <ul><li><b>HTML 4.01 Transitional</b>
+    <dl><dd></dd></dl></li></ul>
+    <pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+    </pre>
+    <ul><li><b>HTML 4.01 Frameset</b>
+    <dl><dd></dd></dl></li></ul>
+    <pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt; 
+    </pre>
+    <ul><li><b>HTML 5</b>
+    <dl><dd></dd></dl></li></ul>
+    <pre>&lt;!DOCTYPE HTML&gt;
+    </pre>
+    <p>Toate paginile HTML încep și se termină cu etichetele <code>&lt;html&gt;</code> și <code>&lt;/html&gt;</code>.
+    </p><p>În interiorul acestor etichete găsim perechile <code>&lt;head&gt;</code>, <code>&lt;/head&gt;</code> și <code>&lt;body&gt;</code>, <code>&lt;/body&gt;</code>.
+    </p><p><code>head</code> conține titlul paginii între etichetele <code>&lt;title&gt;</code> și <code>&lt;/title&gt;</code>, descrieri de tip <code>&lt;meta&gt;</code>, stiluri pentru formatarea textului, script-uri și legături către fisiere externe (de exemplu script-uri, fișiere de tip CSS sau <i>favicon</i>).
+    </p><p>Etichetele de tip <i>meta</i> conțin cuvinte cheie, descrierea paginii, date despre autor, informații utile motoarelor de căutare și au următorul format:
+    </p>
+    <pre>&lt;META NAME="nume" CONTENT="continut"&gt;
+    </pre>
+    <p>Exemplu: link către un fisier extern CSS:
+    </p>
+    <pre>&lt;link rel="stylesheet" type="text/css" href="css.css"&gt;
+    </pre>
+    <p><code>body</code> găzduiește practic toate etichetele afișate de browser pe ecran.
+    </p><p>Exemplu: o pagină HTML cu titlul <i>Exemplu</i> iar conținutul <i>Conținut pagină</i>
+    </p>
+    <pre>&lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Exemplu&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    Conținut pagină
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre> 
+    <p>Și în HTML poate fi introdus un comentariu, care bineînțeles nu va fi afișat de browser:
+    </p>
+    <pre>&lt;!-- comentariu --&gt;
+    </pre>
+    <h2 id="istoria">Istoria HTML-ului</h2>
+    <p>HTML a fost creat pentru prima dată de Tim Berners-Lee, Robert Cailliau și alții începând cu 1989. Înseamnă HyperText Markup Language.</p>
+    <p>Hipertext înseamnă că documentul conține legături care permit cititorului să sară în alte locuri din document sau într-un alt document. Cea mai recentă versiune este cunoscută sub numele de HTML5.</p>
+    <p>Un limbaj de marcare este un mod prin care computerele vorbesc între ele pentru a controla modul în care textul este procesat și prezentat. Pentru a face acest lucru, HTML folosește două lucruri: etichete și atribute.</p>
+    <h2 id="et.at">Ce sunt etichetele și atributele?</h2>
+    <p>Etichetele și atributele sunt baza HTML.
+    <br>Ele lucrează împreună, dar îndeplinesc funcții diferite - merită să investești 2 minute în diferențierea celor două.</p>
+    <p>Etichetele sunt folosite pentru a marca începutul unui element HTML și sunt de obicei închise între paranteze unghiulare. Un exemplu de etichetă este: &lt;h1&gt;.</p>
+    <p>Majoritatea etichetelor trebuie să fie deschise &lt;h1&gt; și închise &lt;/h1&gt;. pentru a funcționa.</p>
+    <p>Atributele conțin informații suplimentare. Atributele iau forma unei etichete de deschidere și informații suplimentare sunt plasate în interior.</p>
+    <p>Un exemplu de atribut este:</p>
+        <code>&lt;img src="mydog.jpg" alt="A photo of my dog."&gt;</code>
+    <p>În acest caz, sursa de imagine (src) și textul alternativ (alt) sunt atribute ale etichetei &lt;img&gt;.</p>
+    <h2 id="editori">Editorii HTML</h2>
+    <p>În primul rând, trebuie să ne asigurăm că avem instrumentele potrivite. Cel mai important, avem nevoie de un editor HTML.</p>
+    <p>Există multe opțiuni pe piață. Iată câteva dintre cele mai populare:</p>
+    <h2>Sublime Text 3</h2>
+    <img src="../img/html-hpg-sublime.png" width="800" height="450">
+    <div class="wpcmsdev-columns">
+        <div class="column column-width-one-half">
+            <h4><span style="color: #008000">Pros</span></h4>
+            <ul><li>Ușor de personalizat</li><li>Pentru începători</li><li>Scheme de culori plăcute din care să alegeți.</li></ul>
+        </div>
+        <div class="column column-width-one-half">
+            <h4><span style="color: #ff0000">Cons</span></h4>
+            <ul><li>Nu se pot imprima documente sau coduri</li><li>Nu este disponibilă nicio bară de instrumente sau tablou de bord.</li></ul>
+        </div>
+    </div>
+    <h2>Notepad ++</h2>
+    <p>O altă alegere obișnuită pentru coderii HTML și alte limbaje este Notepad ++. Este un mic program pentru a descărca și a efectua funcțiile de care aveți nevoie pentru scrierea unui cod curat.</p>
+    <img src="https://html.com/wp-content/uploads/html-homepage-notepad.webp">
+    <div class="wpcmsdev-columns">
+        <div class="column column-width-one-half">
+            <h4><span style="color: #008000">Pros</span></h4>
+            <ul><li>Interfață fără distragere a atenției</li><li>Caracteristică de completare automată</li><li>Opțiuni de plugin pentru funcționalități extinse.</li></ul>
+        </div>
+        <div class="column column-width-one-half">
+            <h4><span style="color: #ff0000">Cons</span></h4>
+            <ul><li>Poate fi dificil să te obișnuiești pentru începători</li><li>Nu există suport pentru Mac.</li></ul>
+        </div>
+    </div>
+    <h2 id="etichete">Etichete suplimentare</h2>
+    <p>În interiorul etichetei &lt;head&gt;, există o etichetă care este întotdeauna inclusă: &lt;title &gt;, dar există altele la fel de importante:</p>
+    <p> <dt><code>&lt;title&gt;</code></a></dt>
+    Aici inserăm numele paginii, așa cum va apărea în partea de sus a ferestrei browserului sau a filei.</p>
+    <p><dt><code>&lt;meta&gt;</code></a></dt>
+        Aici sunt stocate informații despre document: codarea caracterelor, numele (contextul paginii), descrierea.</p>
+    <p><b>Să încercăm o secțiune de bază &lt;head&gt;:</b></p>
+    <div class="head" style="padding-left: 2em">
+        
+        <pre><code>&lt;head&gt;
+        &lt;title&gt;My First Webpage&lt;/title&gt;
+        &lt;<a href="/tags/meta/">meta</a> charset="UTF-8"&gt;
+        &lt;<a href="/attributes/meta-name/">meta name</a>="description" content="This field contains information about your page. It is usually around two sentences long."&gt;.
+        &lt;meta name="author" content="Conor Sheils"&gt;
+        &lt;/header&gt;</code></pre>
+    </div>
+</div>
+</body>
+</html>
