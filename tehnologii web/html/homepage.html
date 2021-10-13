@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro-Ro">
 <meta charset="UTF-8">
-<title>Meniul principal</title>
+<title>Homepage</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -10,12 +10,12 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-image: url("../img/paper_1.png");
+      background-image: url("img/paper_1.png");
       
     }
  
     .bg-image {
-      background-image: url("../img/1102013.jpg");
+      background-image: url("img/1102013.jpg");
       background-color: #cccccc;
       height: 500px;
       background-position: center;
@@ -169,7 +169,7 @@
       font-size: 18px;
       border: none;
       outline: none;
-      background-color: red;
+      background-color:orange;
       color: white;
       cursor: pointer;
       padding: 15px;
@@ -202,19 +202,19 @@
     <section class="row">
         <article class="column border"; >
           <p style="font-size: 25px;"><b>Limbajul C</b></p>
-          <img src="../img/1200px-C_Programming_Language.svg.png" alt="logo C" style="width:25%">
+          <img src="img/1200px-C_Programming_Language.svg.png" alt="logo C" style="width:25%">
           <p>Limbajul C este unul din cele mai populare limbaje de programare la nivel mondial, folosit drept limbaj de inițiere în programare în majoritatea universităților și centrelor de instruire. </p>
         <p><i>Pentru mai multe detalii vezi<br> <a href="index.html" title="Limbajul C"> Despre C</a></i></p>
         </article>
         <article class="column">
           <p style="font-size: 25px;"><b>Limbajul C++</b></p>
-          <img src="../img/C++-Logo.wine.png" alt="logo C++" style="width: 65%">
+          <img src="img/C++-Logo.wine.png" alt="logo C++" style="width: 65%">
           <p>Limbajul C++ a fost inventat de către Bjarne Stroustrup în 1979, ca o extindere a limbajului C. Limbajul C a fost inventat în 1969-1973 de către Dennis Ritchie pentru a realiza sistemul de operare Unix. Astfel, aproape toate programele scrise în C pot fi compilate în C++, eventual cu foarte puține modificări.</p>
           <p><i>Pentru mai multe detalii vezi<br> <a href="limbajul C++.html" title="Limbajul C++">Despre C++</a></i></p>
         </article>
         <article class="column">
           <p style="font-size: 25px;"><b>HyperText Markup Language (HTML)</b></p>
-          <img src="../img/512px-HTML5_logo_and_wordmark.svg.png" alt="logo HTML" style="width:40%">
+          <img src="img/512px-HTML5_logo_and_wordmark.svg.png" alt="logo HTML" style="width:40%">
           <p>Unul din primele elemente fundamentale ale WWW ( World Wide Web ) este HTML ( Hypertext Markup Language ), care descrie formatul primar în care documentele sunt distribuite și văzute pe Web. Multe din trasaturile lui, cum ar fi independenta fata de platforma, structurarea formatării și legaturile hypertext, fac din el un foarte bun format pentru documentele Internet și Web.</p>
           <p><i>Pentru mai multe detalii vezi <br> <a href="HTML.html" title="HTML">Despre HyperText Markup Language (HTML)</a></i></p>
         </article>
@@ -250,12 +250,7 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-  function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+
 
   </script>
 </body>
