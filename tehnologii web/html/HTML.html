@@ -11,7 +11,7 @@
         body{
             font-family: sans-serif;
             background-color: rgb(238, 243, 245);
-            background-image: url("../img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
+            background-image: url("img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
         }
         .topnav {
             overflow: hidden;
@@ -69,7 +69,7 @@
             color:rgb(255, 255, 255);
         }
         .bg-image {
-      background-image: url("../img/2109960.jpg");
+      background-image: url("img/2109960.jpg");
       background-color: #ffffff;
       height: 500px;
       background-position: center;
@@ -130,6 +130,25 @@ pre code {
     background-color: transparent;
     border-radius: 0;
 }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color:orange;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
     </style>
     </head>
     <body>
@@ -140,6 +159,7 @@ pre code {
             <a href="HTML.html">HTML</a>
           </ul>
           </div>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
           <div class="container">
             <div class="bg-image">
           <div class="centered">
@@ -165,7 +185,7 @@ pre code {
     <div class="content">
     <p id="info" style="font-size:25px;text-align:center;"><b>Informații generale</b></p>
     <div class="imagine">
-    <img src="../img/512px-HTML5_logo_and_wordmark.svg.png" width="200" height="140" ></div>
+    <img src="img/512px-HTML5_logo_and_wordmark.svg.png" width="200" height="140" ></div>
     <p><b>HyperText Markup Language</b> (<b>HTML</b>) este un limbaj de marcare utilizat pentru crearea paginilor web ce pot fi afișate într-un browser (sau navigator). Scopul HTML este mai degrabă prezentarea informațiilor – paragrafe, fonturi, tabele ș.a.m.d. – decât descrierea semanticii documentului. În cadrul dezvoltării web de tip front-end, HTML este utilizat împreună cu <a href="https://ro.wikipedia.org/wiki/Cascading_Style_Sheets" class="mw-redirect" title="CSS">CSS</a> și <a href="https://ro.wikipedia.org/wiki/JavaScript" title="JavaScript">JavaScript</a>
     <p>Specificațiile HTML sunt dictate de <a href="https://ro.wikipedia.org/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium</a> (W3C), care încurajează utilizarea CSS în locul a HTML explicit pentru prezentare.</p>
         <h2 id="notiuni">Noțiuni de bază</h2>
@@ -243,7 +263,7 @@ pre code {
     <p>În primul rând, trebuie să ne asigurăm că avem instrumentele potrivite. Cel mai important, avem nevoie de un editor HTML.</p>
     <p>Există multe opțiuni pe piață. Iată câteva dintre cele mai populare:</p>
     <h2>Sublime Text 3</h2>
-    <img src="../img/html-hpg-sublime.png" width="800" height="450">
+    <img src="img/html-hpg-sublime.png" width="800" height="450">
     <div class="wpcmsdev-columns">
         <div class="column column-width-one-half">
             <h4><span style="color: #008000">Pros</span></h4>
@@ -284,5 +304,30 @@ pre code {
         &lt;/header&gt;</code></pre>
     </div>
 </div>
+<script>
+    var mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+    </script>
 </body>
 </html>
