@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limbajul C</title> <!----Titlul principal-->
 </head>
-<body>
-    <style>
-        body{
+<style>
+    body{
     font-family: sans-serif;
     background-color: rgb(238, 243, 245);
-    background-image: url("../img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
+    background-image: url("img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
     }
        .topnav {
             overflow: hidden;
             background-color: #333;
+            transition: top 0.3s;
         }
 
         .topnav a {
@@ -68,7 +68,7 @@
             font-size: 18px;
             border: none;
             outline: none;
-            background-color: red;
+            background-color:orange;
             color: white;
             cursor: pointer;
             padding: 15px;
@@ -89,7 +89,9 @@
             text-align: center;
             color:rgb(255, 255, 255);
         }
-        </style>
+        
+</style>
+<body>
         </head>
         <body>
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -98,17 +100,15 @@
                 <a href="index.html">Limbajul C</a>
                 <a href="limbajul C++.html">Limbajul C++</a>
                 <a href="HTML.html">HTML</a>
-              </ul>
               </div>
               <div class="container">
                 <div class="img">
-              <img src="../img/photo-1523837084841-974e58314272-1652x500.jpg" alt="Snow" style="width:100%; filter:contrast(46%) brightness(80%);" ></div>
+              <img src="img/photo-1523837084841-974e58314272-1652x500.jpg" alt="Snow" style="width:100%; filter:contrast(46%) brightness(80%);" ></div>
               <div class="centered">
                   <h1>Ghidul începătorilor în C: învață ce este și la ce se folosește limbajul C</h1>
                   <time datetime="2019-09-23"><i class="cover__icon"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99295 0C4.02495 0 0.00195312 4.032 0.00195312 9C0.00195312 13.968 4.02495 18 8.99295 18C13.97 18 18.002 13.968 18.002 9C18.002 4.032 13.97 0 8.99295 0ZM9.00195 16.2C5.02395 16.2 1.80195 12.978 1.80195 9C1.80195 5.022 5.02395 1.8 9.00195 1.8C12.98 1.8 16.202 5.022 16.202 9C16.202 12.978 12.98 16.2 9.00195 16.2Z" fill="#BBBBBB"></path><path d="M9.45182 4.49948H8.10182V9.89947L12.8268 12.7345L13.5018 11.6275L9.45182 9.22448V4.49948Z" fill="#BBBBBB"></path></svg></i>2021. septembrie 20.</time>
               </div>
             </div>
-    <h1 style="color:rgb(72, 75, 73); font-size:35px; text-align:center";>Limbajul C</h1>
     <div id="toc_container">
         <p class="toc_title" style="font-size: 20px;">Contents
             <ul class="toc_list">
@@ -123,7 +123,7 @@
     </div>
         <div class="content">
     <p id="info" style="font-size:20px;">Informații generale</p>
-    <img src="../img/1200px-C_Programming_Language.svg.png" width="200" height="170" >
+    <img src="img/1200px-C_Programming_Language.svg.png" width="200" height="170" >
     <p>C  (/ˈsiː/)  este un limbaj de programare standardizat. Este implementat pe majoritatea platformelor de calcul existente azi, și este cel mai popular limbaj de <br>
         programare pentru scrierea de software de sistem. Este apreciat pentru eficiența codului obiect generat de compilatoarele C, și pentru portabilitatea </p>
         <p>A fost dezvoltat la începutul anilor 1970 de Ken Thompson și Dennis Ritchie, care aveau nevoie de un limbaj simplu și portabil pentru scrierea nucleului <br>
@@ -175,30 +175,23 @@
     <h2 id="inv">Cum se &icirc;nvață limbajul de programare C?</h2>
     <p>Există multe limbaje de programare pe care este bine să le &icirc;nvățați și ale căror cunoștințe conduc către o carieră de succes ca programator. Python, PHP,JavaScript sau Java sunt alegeri foarte bune, dar C este unul dintre cele mai importante limbaje de programare. Pe baza acestor cunoștințe se deschide ușa limbajului C#. Din aceste motive, cunoașterea elementelor de bază ale limbajului C reprezintă un pas mare către dob&acirc;ndirea cunoștințelor necesare pentru o carieră IT de succes. Indiferent de limbajul de programare ales, C va apărea foarte frecvent &icirc;n timpul funcționării.</p>
     </div>
-    <script>
-        var mybutton = document.getElementById("myBtn");
-        
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
-      
-        </script>
+<script>
+    var mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 </body>
 </html>
