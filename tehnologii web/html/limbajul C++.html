@@ -11,7 +11,7 @@
         body{
     font-family: sans-serif;
     background-color: rgb(238, 243, 245);
-    background-image: url("../img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
+    background-image: url("img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
     }
         .topnav {
             overflow: hidden;
@@ -136,6 +136,21 @@ b{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+        .sticky {
+  position: fixed;
+  top: 0;
+  left: 50px;
+}
+
+.sticky + .content {
+  padding-top: 82px;
+}
+.header {
+  padding: 1px 6px;
+ background:slategray;
+  color: #f1f1f1;
+  text-align: center;
+}
 
         </style>
         </head>
@@ -146,16 +161,18 @@ b{
                 <a href="index.html">Limbajul C</a>
                 <a href="limbajul C++.html">Limbajul C++</a>
                 <a href="HTML.html">HTML</a>
-              </ul>
               </div>
               <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
               <div class="container">
                   <div class="img">
-                <img src="../img/photo-1523837084841-974e58314272-1652x500.jpg" alt="Snow" style="width:100%; filter:contrast(46%) brightness(80%);" ></div>
+                <img src="img/photo-1523837084841-974e58314272-1652x500.jpg" alt="Snow" style="width:100%; filter:contrast(46%) brightness(80%);" ></div>
                 <div class="centered">
                     <h1>Ghidul începătorilor în C++: învață ce este și la ce se folosește limbajul C++</h1>
                     <time datetime="2019-09-23"><i class="cover__icon"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99295 0C4.02495 0 0.00195312 4.032 0.00195312 9C0.00195312 13.968 4.02495 18 8.99295 18C13.97 18 18.002 13.968 18.002 9C18.002 4.032 13.97 0 8.99295 0ZM9.00195 16.2C5.02395 16.2 1.80195 12.978 1.80195 9C1.80195 5.022 5.02395 1.8 9.00195 1.8C12.98 1.8 16.202 5.022 16.202 9C16.202 12.978 12.98 16.2 9.00195 16.2Z" fill="#BBBBBB"></path><path d="M9.45182 4.49948H8.10182V9.89947L12.8268 12.7345L13.5018 11.6275L9.45182 9.22448V4.49948Z" fill="#BBBBBB"></path></svg></i>2021. septembrie 20.</time>
                 </div>
+              </div>
+              <div class="header" id="myHeader">
+                <h2 onclick="topFunction()" id="myBtn" title="Go to top">Limbajul C++</h2>
               </div>
     <div id="toc_container">
         <p class="toc_title" style="font-size: 20px;">Contents
@@ -171,13 +188,13 @@ b{
     <div class="content">
     <p id="info" style="font-size:25px; text-align: center;" ><b>Informații generale</b></p>
     <div class="imagine">
-    <img src="../img/ISO_C++_Logo.svg" width="250" height="170" >
+    <img src="img/ISO_C++_Logo.svg" width="250" height="170" >
     </div>
     <p>C++ (pronunțat ca în engleză /ˈsiː plʌs plʌs/) este un limbaj de programare general, compilat. Este un limbaj multi-paradigmă, cu verificarea statică a tipului variabilelor ce suportă programare procedurală, abstractizare a datelor, programare orientată pe obiecte. În anii 1990, C++ a devenit unul dintre cele mai populare limbaje de programare comerciale, rămânând astfel până azi[1].</p>
     <p>Bjarne Stroustrup de la Bell Labs a dezvoltat C++ (inițial denumit C cu clase) în anii 1980, ca o serie de îmbunătățiri ale limbajului C. Acestea au început cu adăugarea noțiunii de clase, apoi de funcții virtuale, suprascrierea operatorilor, moștenire multiplă (engleză multiple inheritance), șabloane (engleză template) și excepții. Limbajul de programare C++ a fost standardizat în 1998 ca și ISO 14882:1998, versiunea curentă fiind din 2003, ISO 14882:2003. Următoarea versiune standard, cunoscută informal ca C++0x, este în lucru.</p>
     <h2>Ce fel de limbaj este C++ și cum scrii cod în C++</h2>
     <div class="imagine">
-    <img src="../img/6-1024x683.jpg" width="600" height="450">
+    <img src="img/6-1024x683.jpg" width="600" height="450">
     </div>
     <p>C++ este un limbaj hibrid sau un limbaj compilat, pentru că este o combinație între un limbaj procedural și un limbaj de programare orientat pe obiecte. De asemenea, este un limbaj scalabil, cu ajutorul căruia poți crea aplicații ce consumă multe resurse, precum aplicații pentru desktop sau jocuri complexe la nivel grafic.</p>
     <p>Pașii pentru crearea unui program în C++ sunt:</p>
@@ -204,7 +221,7 @@ b{
     <h2 id="motive">Motive pentru care să înveți limbajul C++, în 2021</h2>
     <p>Ce poate sa facă un program C++? O sumedenie de lucruri interesante și cool, în ciuda „vârstei” sale.  Task-urile tipice de programare includ inserarea sau extragerea de date într-o și dintr-o bază de date, livrarea unei grafici de mare viteză în cadrul unui video sau al unui joc de calculator sau controlarea diferitelor dispozitive atașate la PC. Poți chiar să dezvolți un soft pentru a compune muzică sau efecte sonore.</p>
     <div class="imagine">
-      <img src="../img/photo-1564038057903-1d48b852b412-1024x683.jpg " width="600" height="400">
+      <img src="img/photo-1564038057903-1d48b852b412-1024x683.jpg " width="600" height="400">
    </div>
     <p>C++ este un program bun atât pentru front-end, pentru partea grafică, cât și pentru back-end, în special în zona de servere (MySQL este un exemplu bun de program dezvoltat în C++). Deci, multifuncționalitatea lui este unul din motivele pentru care marile companii angajează programatori care știu C++.</p>
     <h2 id="prog">Ce poți tu să programezi cu C++, astăzi</h2>
@@ -215,13 +232,13 @@ b{
       </ul>
     </div>
     <p>Ai fost mereu fascinat de gaming și visai de la primul FPS pe care l-ai jucat că, într-o zi, o să ajungi să creezi chiar tu jocuri și mai bune? Dacă da, limbajul C++ este pentru tine, pentru că este utilizat în game developing. Iată care sunt punctele lui tari: domină complexitatea jocurilor 3D, suportă opțiunea multiplayer prin rețea și optimizează resursele.</p>
-    <img src="../img/photo-1534423861386-85a16f5d13fd-1024x683.jpg" title="Gaming">
+    <img src="img/photo-1534423861386-85a16f5d13fd-1024x683.jpg" title="Gaming">
     <p>De asemenea, este un limbaj foarte rapid, care permite programarea procedurală pentru funcții intensive ale CPU-ului. Tocmai de aceea este foarte des folosit pentru engine-urile jocurilor. Ubisoft și Blizzard sunt doi dintre marii producători de jocuri care folosesc limbajul C++ în game development, unul dintre jocurile faimoase dezvoltate cu acest limbaj fiind Assassin’s Creed.</p>
     <ul>
       <li>GUI (graphic user interface) cu C++</li>
     </ul>
     <p>Limbajul C++ mai este folosit pentru  dezvoltarea de noi aplicații, bazate pe GUI. Aici vorbim de aplicații foarte utilizate, ca Adobe Photoshop. Multe din aplicațiile de la Adobe Systems  sunt dezvoltate în C++, precum Illustrator sau Adobe Premiere. Deci, programatorii de C++ sunt foarte activi în această zonă, așa că aici poate fi următorul tău trib.</p>
-    <img src="../img/adobe-logo.png" title="Adobe logo">
+    <img src="img/adobe-logo.png" title="Adobe logo">
     <ul>
       <li>Bază de date cu C++</li>
     </ul>
@@ -247,6 +264,31 @@ b{
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+      window.onscroll = function() {myFunction(), scrollFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
     </script>
 </body>
 </html>
