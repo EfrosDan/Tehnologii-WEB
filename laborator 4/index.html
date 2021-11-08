@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limbajul C</title> <!----Titlul principal-->
+</head>
+<style>
+    body{
+    font-family: sans-serif;
+    background-color: rgb(238, 243, 245);
+    background-image: url("img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg");
+    }
+       .topnav {
+            overflow: hidden;
+            background-color: #333;
+            transition: top 0.3s;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            border-bottom: 3px solid transparent;
+        }
+
+        .topnav a:hover {
+            background-color: #111;
+        }
+
+
+        #toc_container {
+            background:transparent;
+            border: 2px solid rgb(19, 17, 17);
+            display: table;
+            font-size: 100%;
+            margin-bottom: 1em;
+            padding: 20px;
+            width:18%;
+        }
+        .toc_title {
+            font-weight: 700;
+            text-align: center;
+        }
+        #toc_container li, #toc_container ul, #toc_container ul li{
+            list-style: outside none none !important;
+        }
+        .content {
+            max-width: 800px;
+            margin-left: 330px;
+            margin-right: 200px;
+            padding-top: 60px;
+            display: flex;
+            align-items: center;
+            flex-direction : column;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color:orange;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color:rgb(255, 255, 255);
+        }
+        
+</style>
+<body>
+        </head>
+        <body>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <div class="topnav">
+                <a class="active" href="homepage.html">Acasa</a>
+                <a href="index.html">Limbajul C</a>
+                <a href="limbajul C++.html">Limbajul C++</a>
+                <a href="HTML.html">HTML</a>
+              </div>
+              <div class="container">
+                <div class="img">
+              <img src="img/photo-1523837084841-974e58314272-1652x500.jpg" alt="Snow" style="width:100%; filter:contrast(46%) brightness(80%);" ></div>
+              <div class="centered">
+                  <h1>Ghidul începătorilor în C: învață ce este și la ce se folosește limbajul C</h1>
+                  <time datetime="2019-09-23"><i class="cover__icon"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.99295 0C4.02495 0 0.00195312 4.032 0.00195312 9C0.00195312 13.968 4.02495 18 8.99295 18C13.97 18 18.002 13.968 18.002 9C18.002 4.032 13.97 0 8.99295 0ZM9.00195 16.2C5.02395 16.2 1.80195 12.978 1.80195 9C1.80195 5.022 5.02395 1.8 9.00195 1.8C12.98 1.8 16.202 5.022 16.202 9C16.202 12.978 12.98 16.2 9.00195 16.2Z" fill="#BBBBBB"></path><path d="M9.45182 4.49948H8.10182V9.89947L12.8268 12.7345L13.5018 11.6275L9.45182 9.22448V4.49948Z" fill="#BBBBBB"></path></svg></i>2021. septembrie 20.</time>
+              </div>
+            </div>
+    <div id="toc_container">
+        <p class="toc_title" style="font-size: 20px;">Contents
+            <ul class="toc_list">
+            <li>1.<a href="#info">Info</a>
+            <li>2.<a href="#ex">Exemplu program</a>
+            <li>3.<a href="#funct">Cum funcționează limbajul C?</a>
+            <li>4.<a href="#prin">Principalele elemente ale limbajului de programare C</a>
+            <li>5.<a href="#fol">Unde se folosește limbajul C?</a>
+            <li>6.<a href="#inv">Cum se &icirc;nvață limbajul de programare C?</a>
+            </p>
+            </ul>
+    </div>
+        <div class="content">
+    <p id="info" style="font-size:20px;">Informații generale</p>
+    <img src="img/1200px-C_Programming_Language.svg.png" width="200" height="170" >
+    <p>C  (/ˈsiː/)  este un limbaj de programare standardizat. Este implementat pe majoritatea platformelor de calcul existente azi, și este cel mai popular limbaj de <br>
+        programare pentru scrierea de software de sistem. Este apreciat pentru eficiența codului obiect generat de compilatoarele C, și pentru portabilitatea </p>
+        <p>A fost dezvoltat la începutul anilor 1970 de Ken Thompson și Dennis Ritchie, care aveau nevoie de un limbaj simplu și portabil pentru scrierea nucleului <br>
+        sistemului de operare UNIX. </p>
+        <p>Sintaxa limbajului C a stat la baza multor limbaje create ulterior și încă populare azi: C++, Java, JavaScrs în strânsă legătură cu hardware-ul, fiind cel mai apropiat de limbajul de asamblare față de <br> majoritatea celorlalte limbaje de programare.</p>
+    <h3 id="ex"> Un exemplu de program C („Hello World!”)</h3>
+    <p>O variantă a următorului exemplu de program a apărut în prima ediție a cărții lui Brian Kernighan și Dennis Ritchie și a devenit un exemplu standard de program introductiv în majoritatea cărților de programare, indiferent de limbajul de programare.<br> Programul afișează „Hello, World!“ la ieșirea standard, care este, de obicei, un terminal sau monitor. Poate să fie, totuși, și un fișier sau alt dispozitiv hardware, depinzând de maparea ieșirii standard în momentul execuției programului.</p>
+    <pre> <b>#include &lt;stdio.h&gt;</b> 
+
+    int main(void)
+    {
+        printf("Hello, World!\n");
+    
+        return 0;
+    }</pre>
+    <p>Urmează o discuție linie cu linie a programului prezentat mai sus:</p>
+    <pre>#include "stdio.h"</pre>
+    <p>Prima linie a programului reprezintă o directivă preprocesor, #include. Aceasta face ca preprocesorul să substituiască linia respectivă cu conținutul unui fișier sau al entității la care se face referire. În acest caz, antetul standard stdio.h — care conține definițiile funcțiilor de manipulare a intrării și ieșirii standard — va înlocui acea linie.</p>
+    <pre>int main(void)</pre>
+    <p>Următoarea linie definește funcția numită main. Funcția main are un loc bine stabilit în programele C. Când un program C este executat, aceasta este prima funcție executată (punctul de intrare în program). Prezența acesteia este obligatorie pentru ca un program să poată fi executat. Porțiunea de cod int indică faptul că valoare întoarsă — valoare pe care funcția main o va întoarce procesului apelant — este un întreg. (void) indică faptul că funcția main nu primește nici un argument la apelare.</p>
+    <pre>{</pre>
+        <p>Paranteza acoladă deschisă indică începutul codului pentru funcția main.</p>
+        <pre> printf("Hello World\n");</pre>
+        <p>Aceasta linie apelează — caută și execută codul — funcția printf, care a fost definită în fișierul header stdio.h. În cadrul acestui apel, funcției printf îi este pasat (transmis) un singur argument, șirul de caractere "Hello, World!\n". Secvența \n este denumită secvență escape (cu semnificație specială), care se traduce prin caracterul EOL (end-of-line, sfârșitul liniei), pentru a muta cursorul pe linia următoare. Valoarea de întoarcere a funcției printf este un întreg int, dar nu este folosită în acest caz (este "ignorată").</p>
+        <pre><b>  return 0;</b></pre>
+        <p>Această instrucțiune termină execuția codului funcției main și face ca aceasta să întoarcă valoarea 0 procesului apelant, în cazul acesta sistemului de operare.</p>
+        <pre>}</pre>
+        <p>Paranteza acoladă închisă indică terminarea codului funcției main.</p>
+        <h2 id="funct">Cum funcționează limbajul C?</h2>
+    <p>Limbajul de programare C este &icirc;mpărțit &icirc;n diferite module, adică elemente. Astfel, fiecare modul poate fi scris separat și eventual integrat &icirc;ntr-un singur program. Programele scrise &icirc;n acest limbaj sunt alcătuite din diferite elemente care au propriile utilizări specifice.</p>
+    <p>Acest lucru &icirc;nseamnă că structura unui program este alcătuită din diferite elemente care, atunci c&acirc;nd sunt combinate corespunzător, &icirc;ndeplinesc sarcina. Acest lucru ușurează testarea și permite depanarea &icirc;n timp util a erorilor din cod.<strong><strong>&nbsp;</strong></strong></p>
+    <p>Pentru ca un program C să funcționeze, trebuie să aibă biblioteci și funcția <i>main</i> (). Bibliotecile sunt fișiere care conțin funcții ce pot fi utilizate la scrierea programelor. Dacă &icirc;n sursă nu sunt incluse biblioteci, acesta le adaugă automat pe cele de bază, respectiv <i>stdio.h</i> și <i>stdlib.h.</i></p>
+    <h2 id="prin">Principalele elemente ale limbajului de programare C&nbsp;</h2>
+    <p>Indiferent de elementul pe care &icirc;l luați pentru procesare, poziția de pornire este &icirc;ntotdeauna funcția principală, adică<i> main</i> (). Pentru a folosi limbajul C, trebuie să știți <a href="https://www.programiz.com/c-programming/list-all-keywords-c-language">32 de cuvinte-cheie</a>. C&acirc;teva dintre aceste cuvinte sunt: auto, break, register, union, switch, white... La codare veți folosi diverse simboluri, cum ar fi semnul +. De asemenea, este foarte important locul &icirc;n care sunt plasate parantezele (mari sau mici). &Icirc;n cele din urmă, trebuie să adoptați și termeni care sunt folosiți pentru a marca funcțiile.</p>
+    <p>Fiecare program scris &icirc;n limbaj C are această funcție, adică un set de instrucțiuni pentru a efectua operația dorită. După cum vedeți, funcțiile sunt scrise cu paranteze obligatorii. Anumite informații pot fi găsite &icirc;ntre ele sau pot fi lăsate necompletate. Există multe funcții, dar <i>main</i> () este baza modului &icirc;n care funcționează un program. &Icirc;n afară de aceasta, există multe alte elemente necesare:<strong><strong>&nbsp;</strong></strong></p>
+    <ul>
+    <li><b>#include</b> &ndash; Este o directivă preprocesor care spune compilatorului să includă textul dintr-un alt fișier. &Icirc;n acest fel, un număr mare de erori de cod pot fi evitate.</li>
+    <li><b>&lt; stdio.h &gt;</b> &ndash; Baza acestui element este fișierul stdio.h, care conține informații despre modul de introducere a informațiilor, precum și modul &icirc;n care se afișează (input/output). Acesta este de obicei văzut sub forma #include &lt; stdio.h &gt;, o comandă care spune compilatorului să insereze un anumit stdio.h &icirc;ntr-o locație specifică.</li>
+    <li><i><b>Int main</b> &ndash; </i>Este o funcție care identifică cu semnul int funcția principală ca un număr &icirc;ntreg, ceea ce &icirc;nseamnă că main () ar trebui să returneze o valoare număr &icirc;ntreg la sf&acirc;rșitul procesului. &Icirc;n limbajul de programare C, o funcție este scrisă mai &icirc;nt&acirc;i specific&acirc;nd tipul funcției (int sau void). Dacă funcția returnează un număr &icirc;ntreg, funcția este int. Cu toate acestea, dacă o funcție efectuează o operație și nu contează ce returnează sau nu returnează nimic, atunci funcția este void.</li>
+    <li><b>printf ( )</b> &ndash; Această funcție are sarcina de a afișa informații pe ecran. Este interesant faptul că comanda se numește &bdquo;print&rdquo;, deoarece rezultatele au fost afișate anterior pe h&acirc;rtie, adică au fost tipărite. Abia mai t&acirc;rziu au apărut monitoarele.</li>
+    <li><b> </b> &ndash; Reprezintă un semn pentru trecerea la un nou r&acirc;nd.</li>
+    <li><b><b>return </b>&ndash; </b>Această comandă trimite valoarea 0 &icirc;napoi la sistemul de operare atunci c&acirc;nd funcția principală este finalizată. Aceasta este ultima comandă care marchează finalizarea cu succes a programului.<strong><strong>&nbsp;</strong></strong></li>
+    </ul>
+    <p>Este foarte important să știți că limbajul C &icirc;nregistrează majuscule și minuscule, deci nu este la fel dacă scrieți return, RETURN sau Return. </p>
+    <p><strong><strong><img src="https://www.link-academy.com/cms/mestoZaUploadFajlove/programatorul-lucreaza-pe-laptop.jpg" alt="Cum se &icirc;nvață limbajul de programare C" width="704" height="375" /></strong></strong></p>
+    <h2 id="fol">Unde se folosește limbajul C?</h2>
+    <p>Programarea&nbsp;de sistem este un domeniu &icirc;n care C este utilizat pentru a implementa sistemul de operare și aplicațiile. Acest limbaj este potrivit pentru acest rol, deoarece poate fi folosit pe mai multe platforme, dar poate fi, de asemenea, un cod scris specific pentru PC. &Icirc;n acest fel, hardware-ul definit cu exactitate poate fi accesat pentru a executa comenzi specifice.</p>
+    <p>Acest limbaj de programare este utilizat și la crearea site-urilor. Apoi, rolul său este să conecteze aplicația web, serverul și browserul. Avantajul limbajului C este că compilatoarele sunt implementate &icirc;n el. Datorită vitezei, stabilității și universalității sale, C este un limbaj foarte reprezentat. Prin urmare, programatorii sunt sfătuiți să stăp&acirc;nească acest limbaj ca bază pentru perfecționare.</p>
+    <h2 id="inv">Cum se &icirc;nvață limbajul de programare C?</h2>
+    <p>Există multe limbaje de programare pe care este bine să le &icirc;nvățați și ale căror cunoștințe conduc către o carieră de succes ca programator. Python, PHP,JavaScript sau Java sunt alegeri foarte bune, dar C este unul dintre cele mai importante limbaje de programare. Pe baza acestor cunoștințe se deschide ușa limbajului C#. Din aceste motive, cunoașterea elementelor de bază ale limbajului C reprezintă un pas mare către dob&acirc;ndirea cunoștințelor necesare pentru o carieră IT de succes. Indiferent de limbajul de programare ales, C va apărea foarte frecvent &icirc;n timpul funcționării.</p>
+    </div>
+<script>
+    var mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+</body>
+</html>
