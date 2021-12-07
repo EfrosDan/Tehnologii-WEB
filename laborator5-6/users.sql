@@ -3,11 +3,10 @@ CREATE TABLE IF NOT EXISTS `users` (
   `user` varchar(255) DEFAULT NULL,
   `pass` varchar(100) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `profile_photo` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `username` (`user`),
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
-INSERT INTO `users` (`uid`, `user`, `pass`, `email`, `profile_photo`) VALUES
-(1, 'test', 'test', 'test@phpzag.com', NULL);
+INSERT INTO `users` (`uid`, `user`, `pass`, `email`) VALUES
+(1, 'test', 'test', 'test@gmail.com');
